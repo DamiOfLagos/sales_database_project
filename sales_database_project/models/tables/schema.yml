@@ -1,0 +1,11 @@
+version: 2
+
+sources:
+  - name: source
+    database: salesdb
+    schema: source
+    tables:
+      - name: products_table
+      - name: sales_table
+      - name: store_table
+      - name: team_table
