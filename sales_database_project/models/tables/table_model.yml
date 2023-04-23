@@ -1,0 +1,17 @@
+version: 2
+
+models:
+  - name: daily_sale_count
+    description: This table contains the daily volume of sales in the database
+
+    columns:
+      - name: sales_date
+        description: This is the various date in our database
+        tests:
+          - unique
+          - not_null
+
+      - name: daily_sales_count
+        description: The user who performed the event
+        tests:
+          - not_null
