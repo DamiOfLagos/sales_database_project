@@ -6,6 +6,11 @@ sources:
     schema: source
     tables:
       - name: products_table
+        columns:
+            - name: index
+              tests:
+                - unique
+                - not_null
       - name: sales_table
       - name: store_table
       - name: team_table
